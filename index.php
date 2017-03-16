@@ -1,3 +1,45 @@
+<?php
+	if (isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+		$human = intval($_POST['human']);
+		$from = 'Demo Contact Form';
+		$to = 'cooper.sf@gmail.com';
+		$subject = 'Message from Contact Demo ';
+
+		$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+		// Check if name has been entered
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name';
+		}
+
+		// Check if email has been entered and is valid
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+
+		//Check if message has been entered
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter your message';
+		}
+		//Check if simple anti-bot test is correct
+		if ($human !== 5) {
+			$errHuman = 'Your maths is incorrect';
+		}
+
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+	if (mail ($to, $subject, $body, $from)) {
+		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+	} else {
+		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+	}
+}
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,7 +83,7 @@
         <h1>Simon Cooper</h1>
         <p>Senior Martech Professional</br>London,UK</P>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Contact Me</button>
-
+</div>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -52,29 +94,57 @@
         </button>
       </div>
       <div class="modal-body">
-        <form id="contact" method="post" action="">
-          <div class="form-group">
-            <label for="recipient-name" class="form-control-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="email-address" class="form-control-label">Recipient:</label>
-            <input type="text" class="form-control" id="email-address">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="form-control-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
+        <form class="form-horizontal" role="form" method="post" action="index.php">
+	<div class="form-group">
+		<label for="name" class="control-label">Name</label>
+		<div class="">
+			<input type="text" class="form-control" id="name" name="name" placeholder="First &amp; Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+			<?php echo "<p class='text-danger'>$errName</p>";?>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="email" class="control-label">Email</label>
+		<div class="">
+			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+			<?php echo "<p class='text-danger'>$errEmail</p>";?>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="message" class="control-label">Message</label>
+		<div class="">
+			<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+			<?php echo "<p class='text-danger'>$errMessage</p>";?>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="human" class="control-label">2 + 3 = ?</label>
+		<div class="">
+			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+			<?php echo "<p class='text-danger'>$errHuman</p>";?>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="">
+
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="">
+			<?php echo $result; ?>
+		</div>
+	</div>
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+</form>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" type="submit" value="Send message">Send message</button>
+
       </div>
     </div>
   </div>
 </div>
-      </div>
+
 
 
       </div><!--End of Jumbo-->
@@ -84,6 +154,7 @@
     <div class="row">
       <div class="col"></div>
       <div class="col-8 text-justify"><p>
+
 
       I’m a Digital Marketer with 10+ years experience having held various roles at a couple of market leading organisations managing clients grow their business via major digital channels such as Search and Social. I have always stayed for a number of years at the same company as I like to feel I've actually delivered value to the company's growth rather than hop around here and there.  I'm also a strong team leader having managed both local and remote international staff. Mentoring and seeing younger talent develop and succeed has always been an enjoyable part of the job.</p>
         <div class="alert alert-info" role="alert">
