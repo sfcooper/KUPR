@@ -1,3 +1,4 @@
+<!--contact form was found at https://bootstrapbay.com/blog/working-bootstrap-contact-form/-->
 <?php
 	if (isset($_POST["submit"])) {
 		$name = $_POST['name'];
