@@ -57,8 +57,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
           </button>
 
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+            <ul class="navbar-nav mr-auto text-white">
+              <li class="nav-item">
                 <a class="nav-link" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
@@ -88,7 +88,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Send me a message</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -125,7 +125,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	</div>
 	<div class="form-group">
 		<div class="">
-
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<input id="submit" name="submit" type="submit" value="Send Message" class="btn btn-primary">
 		</div>
 	</div>
 	<div class="form-group">
@@ -133,13 +134,10 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 			<?php echo $result; ?>
 		</div>
 	</div>
-  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-  <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
 </form>
 
       </div>
       <div class="modal-footer">
-
       </div>
     </div>
   </div>
@@ -158,7 +156,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
       I’m a Digital Marketer with 10+ years experience having held various roles at a couple of market leading organisations managing clients grow their business via major digital channels such as Search and Social. I have always stayed for a number of years at the same company as I like to feel I've actually delivered value to the company's growth rather than hop around here and there.  I'm also a strong team leader having managed both local and remote international staff. Mentoring and seeing younger talent develop and succeed has always been an enjoyable part of the job.</p>
         <div class="alert alert-info" role="alert">
-    <strong>Seeking work!</strong><p>I'm actively looking for software companies where I can use my skills to generate results for clients.  Please do get in touch if you think my skills and experience are a match for your company.</p>
+    <strong>Seeking work!</strong><p>I'm actively looking for Enterprise <abbr title="Software as a Service">SaaS</abbr> software companies where I can use my skills to generate results for clients.  Please do <a href="#" class="alert-link" data-toggle="modal" data-target="#exampleModal">get in touch</a> if you think my skills and experience are a match for your company.</p>
   </div>
 </div>
       <div class="col"></div>
@@ -253,7 +251,7 @@ Lastly and as valuable he has a finely developed dry sense of humour which makes
 <a href="https://www.linkedin.com/in/sfcooper/"><img src="images/1489625760_linkedin_social_media_online.png"></a>
 <a href="http://instagram.com/sfcooper"><img src="images/1489625765_instagram_social_media_online-.png"></a>
 <a href="https://github.com/sfcooper"><img src="images/1489625757_github_social_media_online.png"></a></br></br>
-<a href="SimonCooperCV0117.pdf"><button type="button" class="btn btn-success">View My CV</button></a>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Contact Me</button>
 </div>
   </div>
 </div>
