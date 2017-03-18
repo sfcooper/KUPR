@@ -149,10 +149,11 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
       </div><!--End of Jumbo-->
 <div id="experience" class="container-fluid bg-faded"><!--Experience-->
   <div class="container">
+    <br /><br />
     <h2 class="text-center"><a class="anchor-link" href="#experience"></a>Experience</h2>
     <div class="row">
       <div class="col"></div>
-      <div class="col-8 text-justify"><p>
+      <div class="col-10 text-justify"><p>
 
 
       I’m a Digital Marketer with 10+ years experience having held various roles at a couple of market leading organisations managing clients grow their business via major digital channels such as Search and Social. I have always stayed for a number of years at the same company as I like to feel I've actually delivered value to the company's growth rather than hop around here and there.  I'm also a strong team leader having managed both local and remote international staff. Mentoring and seeing younger talent develop and succeed has always been an enjoyable part of the job.</p>
@@ -178,6 +179,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 </div>
 <div id="recommendations" class="container-fluid"><!--Recomemndations-->
   <div class="container">
+    <br /><br />
     <h2 class="text-center">Recommendations</h2>
 <div class="card-deck">
       <div class="card">
@@ -214,6 +216,7 @@ Lastly and as valuable he has a finely developed dry sense of humour which makes
 </div>
 <div class="container-fluid bg-faded" id="follow">
   <div class="container">
+    <br /><br />
 <h2 class="text-center">Follow Me</h2>
 <div class="container text-center">
 
@@ -257,7 +260,7 @@ Lastly and as valuable he has a finely developed dry sense of humour which makes
   </div>
 </div>
 <div class="container text-center">
-<p><small><em>&copy;Simon Cooper 2017</em></small></p>
+<p><small><em>&copy;Simon Cooper 2017</em></small></p><span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> by me!</span>
 </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
