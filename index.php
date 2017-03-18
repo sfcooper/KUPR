@@ -171,8 +171,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <div class="col"><h4>Leadership</h4>I have always taken time to ensure my teams understood their roles and objectives but also made sure they knew I was there to support and facilitate their success.</div>
     </div><br /><hr>
     <div class="row">
-      <div class="col text-center"><h4>Work History</h4><img src="images/KS_grey_logo.png" alt="Kenshoo"/><img src="images/TD_grey_logo.png" alt="TradeDoubler" /><img src="images/TSW_grey_logo.png" alt="The Search Works" /></div>
-        <div class="col text-center"><h4>Clients</h4><img src="images/AH_logo_grey.png" alt="Accorhotels" /><img src="images/SS_grey_logo.png" alt="Skyscanner"><img src="images/YNAP_Grey_logo.png" alt"Yoox Net-A-Porter" /><img src="images/JL_grey_logo.png" alt="John Lewis" />
+      <div class="col text-center"><h3>Work History</h3><br /><br /><img src="images/KS_grey_logo.png" alt="Kenshoo"/><img src="images/TD_grey_logo.png" alt="TradeDoubler" /><img src="images/TSW_grey_logo.png" alt="The Search Works" /></div>
+        <div class="col text-center"><h3>Clients</h3><br /><br /><img src="images/AH_logo_grey.png" alt="Accorhotels" /><img src="images/SS_grey_logo.png" alt="Skyscanner"><img src="images/YNAP_Grey_logo.png" alt"Yoox Net-A-Porter" /><img src="images/JL_grey_logo.png" alt="John Lewis" />
           </div>
     </div>
 </div>
@@ -222,7 +222,7 @@ Lastly and as valuable he has a finely developed dry sense of humour which makes
 
   <div class="row">
     <div class="col"></div>
-    <div class="col-8 text-justify">I have a number of different accounts on both Twitter and Instagram to make sure I'm speaking to the right audience.  My cycling friends tell me they do not want to hear about the latest Facebook ad format for some reason!? So below is just a flavour&#8230; </div>
+    <div class="col-10 text-justify">I have a number of different accounts on both Twitter and Instagram to make sure I'm speaking to the right audience.  My cycling friends tell me they do not want to hear about the latest Facebook ad format for some reason!? So below is just a flavour&#8230; </div>
     <div class="col"></div>
   </div>
   <hr />
