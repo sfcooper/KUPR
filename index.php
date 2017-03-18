@@ -171,8 +171,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <div class="col"><h4>Leadership</h4>I have always taken time to ensure my teams understood their roles and objectives but also made sure they knew I was there to support and facilitate their success.</div>
     </div><br /><hr>
     <div class="row">
-      <div class="col text-center"><h3>Work History</h3><br /><br /><img src="images/KS_grey_logo.png" alt="Kenshoo"/><img src="images/TD_grey_logo.png" alt="TradeDoubler" /><img src="images/TSW_grey_logo.png" alt="The Search Works" /></div>
-        <div class="col text-center"><h3>Clients</h3><br /><br /><img src="images/AH_logo_grey.png" alt="Accorhotels" /><img src="images/SS_grey_logo.png" alt="Skyscanner"><img src="images/YNAP_Grey_logo.png" alt"Yoox Net-A-Porter" /><img src="images/JL_grey_logo.png" alt="John Lewis" />
+      <div class="col text-center"><h3>Work History</h3><br /><img src="images/KS_grey_logo.png" alt="Kenshoo"/><img src="images/TD_grey_logo.png" alt="TradeDoubler" /><img src="images/TSW_grey_logo.png" alt="The Search Works" /></div>
+        <div class="col text-center"><h3>Clients</h3><br /><img src="images/AH_logo_grey.png" alt="Accorhotels" /><img src="images/SS_grey_logo.png" alt="Skyscanner"><img src="images/YNAP_Grey_logo.png" alt"Yoox Net-A-Porter" /><img src="images/JL_grey_logo.png" alt="John Lewis" />
           </div>
     </div>
 </div>
